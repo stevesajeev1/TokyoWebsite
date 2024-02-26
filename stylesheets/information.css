@@ -1,0 +1,81 @@
+/* Steve Sajeev, Seminole State College, COP2831, Rebekah Rosario */
+
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&family=PT+Sans&display=swap');
+
+
+.ui-accordion {
+    display: flex;
+    flex-direction: column;
+}
+
+.ui-accordion-content {
+    display: flex;
+    flex-direction: column;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    background-color: rgba(251, 137, 135, 0.4);
+    color: #FFE9CA;
+    overflow: hidden;
+}
+
+.info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    margin-top: 10px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.ui-accordion-header {
+    font-family: "Yuji Syuku", serif;
+    color: #FFE9CA;
+    background: transparent;
+    line-height: 50px;
+    font-size: 50px !important;
+}
+
+.ui-icon, .ui-accordion-header-icon {
+    transform: scale(2);
+    filter: brightness(0) saturate(100%) invert(99%) sepia(68%) saturate(878%) hue-rotate(304deg) brightness(100%) contrast(106%);
+    margin-right: 10px;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-right: 20px;
+    height: 190px;
+    width: 100%;
+    color: #FFE9CA;
+}
+
+.img-container > img {
+    height: 190px;
+}
+
+.img-container > div {
+    position: absolute;
+    height: 190px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    pointer-events: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+.citation {
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}

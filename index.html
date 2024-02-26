@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo, Japan</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- JQuery Plugin YTPlayer for background video -->
+    <link href="plugins/YTPlayer/css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+    <script src="plugins/YTPlayer/jquery.mb.YTPlayer.min.js"></script>
+
+    <!-- Scripts + CSS -->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <script src="scripts/index.js"></script>
+
+    <!-- Steve Sajeev, Seminole State College, COP2831, Rebekah Rosario -->
+</head>
+<body>
+    <ul id="navigation">
+        <li><a>Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="activities_events.html">Activities/Events</a></li>
+        <li><a href="travel.html">Travel</a></li>
+    </ul>
+
+    <!-- YTPlayer Plugin background video, stock video: http://youtu.be/SZkYZGv_voM -->
+    <div id="bgndVideo" class="player" data-property="{videoURL:'SZkYZGv_voM', mute: true, showControls: false, loop: true, stopMovieOnBlur: false}"></div>
+    
+    <div id="container"></div>
+    
+    <div id="banner">
+        <div id="city">TOKYO</div>
+        <div id="country">JAPAN</div>
+    </div>
+</body>
+</html>

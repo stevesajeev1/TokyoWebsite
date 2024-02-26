@@ -1,0 +1,99 @@
+/* Steve Sajeev, Seminole State College, COP2831, Rebekah Rosario */
+
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Martian+Mono&display=swap');
+
+
+#navigation {
+    position: fixed;
+}
+
+#container::-webkit-scrollbar {
+    width: 10px;
+}
+
+#container::-webkit-scrollbar-thumb {
+    background: #FB8987;
+    border-radius: 10px;
+}
+
+header {
+    font-family: "Yuji Boku", serif;
+    font-size: 60px;
+    color: #FFE9CA;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.img-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    height: 250px;
+    width: 100%;
+    color: #FFE9CA;
+}
+
+.img-container > img {
+    height: 250px;
+}
+
+.img-container > div {
+    position: absolute;
+    height: 250px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.85);
+    pointer-events: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Override styles for timeline-plugin */
+.vtimeline {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    border-top: 10px solid #FB8987;
+    border-bottom: 10px solid #FB8987;
+}
+
+.vtimeline::before {
+    width: 10px;
+    background-color: #FB8987;
+}
+
+.vtimeline-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #FFE9CA;
+    border: 8px solid #FB8987;
+}
+
+.vtimeline-date {
+    margin-top: -10px;
+    font-family: "Martian Mono", monospace;
+    font-size: 50px;
+    color: #FFE9CA;
+}
+
+.vtimeline-content {
+    position: relative;
+    opacity: 0;
+    background-color: transparent;
+    font-family: "Yuji Syuku", serif;
+    color: #FFE9CA;
+}
+
+#citation {
+    padding: 10px;
+    font-family: "Yuji Syuku", serif;
+    color: #FFE9CA;
+}

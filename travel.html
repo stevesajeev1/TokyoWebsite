@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel in Tokyo, Japan</title>
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <!-- Scripts + CSS -->
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/travel.css">
+    <script src="scripts/travel.js"></script>
+
+    <!-- Steve Sajeev, Seminole State College, COP2831, Rebekah Rosario -->
+</head>
+<body>
+    <ul id="navigation">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="information.html">Information</a></li>
+        <li><a href="activities_events.html">Activities/Events</a></li>
+        <li><a>Travel</a></li>
+    </ul>
+
+    <div id="container">
+        <header>Travel in Tokyo, Japan</header>
+        <div id="toggle-view">
+            <p>View Hotels</p>
+            <label class="switch">
+                <input id="toggle" type="checkbox">
+                <span class="slider"></span>
+            </label>
+            <p>View Airports</p>
+        </div>
+        <div id="info">
+            <!-- Embedded Google MyMap -->
+            <iframe id="map" src="https://www.google.com/maps/d/embed?mid=1ZyhJ7UeGQXo-r3Dt3tel3i8sA2ilX1Q&ehbc=2E312F"></iframe>
+            <div id="list-container">
+                <h3 id="info-header">Hotel options in Tokyo include:</h3>
+                <ul id="hotel-list" class="show">
+                    <li>Candeo Hotels Uenokoen - $55 a night</li>
+                    <li>APA Hotel Keisei Ueno-Ekimae - $71 a night</li>
+                    <li>FromScratch TOKYO - $31 a night</li>
+                    <li>Hotel Mets Komagome - $50 a night</li>
+                    <li>Tokyo Prince Hotel - $248 a night</li>
+                    <li>Lotte City Hotel Kinshicho - $66 a night</li>
+                    <li>ONE@Tokyo - $82 a night</li>
+                    <li>Sotetsu Grand Fresa Tokyo-Bay Ariake - $52 a night</li>
+                    <li>Karaksa Hotel TOKYO STATION - $182 a night</li>
+                    <li>Hamacho Hotel - $85 a night</li>
+                    <li>Hotel East 21 Tokyo - $40 a night</li>
+                    <li>Hotel Sunroute Plaza Shinjuku - $110 a night</li>
+                    <li>MANGA ART HOTEL, TOKYO - $44 a night</li>
+                    <li>Mitsui Garden Hotel Toyosu Premier - $121 a night</li>
+                    <li>APA Hotel TKP Nippori-ekimae - $44 a night</li>
+                    <li>Hotel Resol Ueno - $126 a night</li>
+                </ul>
+                <ul id="airport-list">
+                    <li>Haneda International Airport (Tokyo International Airport), used mainly for domestic flights</li>
+                    <li>Narita International Airport, used mainly for international flights</li>
+                </ul>
+            </div>
+        </div>
+        <div id="citation">Information from Google Maps and Google</div>
+    </div>
+</body>
+</html>

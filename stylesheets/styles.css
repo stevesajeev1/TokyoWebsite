@@ -1,0 +1,54 @@
+/* Steve Sajeev, Seminole State College, COP2831, Rebekah Rosario */
+
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Syuku&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+#navigation {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding-top: 15px;
+    list-style-type: none;
+    background-color: #562151;
+}
+
+#navigation a {
+    text-decoration: none;
+    font-family: "Yuji Syuku", serif;
+    font-weight: bold;
+    color: #FBB95D;
+    font-size: 18px;
+}
+
+#navigation a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#container {
+    height: 100%;
+    width: calc(100% - 200px);
+    overflow-y: auto;
+    background-color: #D7713B;
+    opacity: 1;
+    background-image: radial-gradient(circle at center center, #FB8987, #D7713B), repeating-radial-gradient(circle at center center, #FB8987, #FB8987, 40px, transparent 80px, transparent 40px);
+    background-blend-mode: multiply;
+}

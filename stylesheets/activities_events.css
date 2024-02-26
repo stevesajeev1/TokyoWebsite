@@ -1,0 +1,176 @@
+/* Steve Sajeev, Seminole State College, COP2831, Rebekah Rosario */
+
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Yuji+Boku&family=PT+Sans&display=swap');
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    font-family: "Yuji Boku", serif;
+    font-size: 60px;
+    color: #FFE9CA;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 10px solid #FB8987;
+}
+
+#content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#slideshow {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 530px;
+    min-width: 300px;
+    height: 370px;
+    border: 5px solid #FB8987;
+}
+
+.slide {
+    display: none;
+}
+
+#display {
+    width: 100%;
+    min-height: 300px;
+    max-height: 300px;
+}
+
+#display:hover {
+    cursor: wait;
+}
+
+#source {
+    position: absolute;
+    bottom: 60px;
+    width: 100%;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    font-family: "Yuji Syuku", serif;
+    font-weight: bold;
+    color: #FBB95D;
+    background-color: rgba(86,33,81, 0.8);
+}
+
+#img-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+#caption, #date {
+    text-align: center;
+    font-family: "Yuji Syuku", serif;
+    color: #FFE9CA;
+}
+
+#caption {
+    font-weight: bold;
+}
+
+#citation {
+    border-top: 10px solid #FB8987;
+    padding: 10px;
+    font-family: "Yuji Syuku", serif;
+    color: #FFE9CA;
+}
+
+#spacer {
+    min-width: 20px;
+    flex: 1;
+}
+
+#signup-container {
+    display: flex;
+    justify-content: center;
+    min-width: 500px;
+    max-width: 500px;
+    margin-right: 50px;
+}
+
+#signup {
+    background-color: rgba(86, 33, 81, 0.9);
+    border: 5px solid #FB8987;
+}
+
+#activity-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    font-family: "PT Sans", sans-serif;
+    color: #FBB95D;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Yuji Syuku", serif;
+    font-size: 50px;
+    padding: 20px;
+    border-bottom: 5px solid #FB8987;
+    color: #FBB95D;
+}
+
+label {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 20px;
+}
+
+option {
+    font-family: "PT Sans", sans-serif;
+}
+
+select, input {
+    text-align: center;
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    margin: 0 5px 0 10px;
+    width: 30%;
+}
+
+label > span {
+    font-size: 16px;
+    color: red;
+    width: 30%;
+}
+
+#submit {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #D7713B;
+    border: none;
+    color: #FFFFFF;
+}
+
+#submit:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+#success {
+    display: none;
+    line-height: 25px;
+    height: 25px;
+    width: 100%;
+    text-align: center;
+    background-color: greenyellow;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+}

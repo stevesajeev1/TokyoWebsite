@@ -1,0 +1,146 @@
+/* Steve Sajeev, Seminole State College, COP2831, Rebekah Rosario */
+
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Yuji+Boku&family=PT+Sans&display=swap");
+
+
+header {
+    font-family: "Yuji Boku", serif;
+    font-size: 60px;
+    color: #ffe9ca;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 10px solid #fb8987;
+}
+
+#container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#toggle-view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    margin-top: 10px;
+    font-family: "Yuji Syuku", serif;
+    font-weight: bold;
+    font-size: 30px;
+    color: #FFE9CA;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+#toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+#toggle:checked + .slider {
+    background-color: #2196f3;
+}
+
+#toggle:focus + .slider {
+    box-shadow: 0 0 1px #2196f3;
+}
+
+#toggle:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+#info {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#map {
+    width: 640px;
+    height: 480px;
+}
+
+#list-container {
+    height: 480px;
+    width: 600px;
+    padding: 20px;
+    padding-left: 40px;
+    font-family: "PT Sans", sans-serif;
+    background-color: rgba(251, 137, 135, 0.4);
+    color: #FFE9CA;
+}
+
+#info-header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#list-container ul:not(.show) {
+    display: none;
+}
+
+#list-container ul {
+    overflow-y: auto;
+    height: 400px;
+}
+
+#list-container ul::-webkit-scrollbar {
+    width: 10px;
+}
+
+#list-container ul::-webkit-scrollbar-thumb {
+    background: #FB8987;
+    border-radius: 10px;
+}
+
+#list-container li {
+    font-size: 18px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+#citation {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    font-family: "Yuji Syuku", serif;
+    font-weight: bold;
+    font-style: italic;
+    color: #FFE9CA;
+}
